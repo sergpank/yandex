@@ -43,6 +43,6 @@ public class FindReader extends AbstractReader {
             name = nodes[nodes.length - 1];
             parents = Arrays.copyOf(nodes, nodes.length - 1);
         }
-        return new SystemNode(id, name);
+        return new SystemNode(name, id);
     }
 }

@@ -17,7 +17,7 @@ public class FileTree {
 
     /**
      * add child to parent node
-     * if parent == null -> add child to root node
+     * FIND format
      *
      * @param child
      * @param parents
@@ -47,6 +47,31 @@ public class FileTree {
             parentNode = findParentNode(parentNode.getChildren(), restParents);
         }
 
+        return parentNode;
+    }
+
+    /**
+     * Add child to file tree
+     * PYTHON format
+     *
+     * @param node
+     * @param nodeStack
+     */
+    public void addChild(SystemNode node, List<SystemNode> nodeStack) {
+        SystemNode parentNode = findParentNode(nodeStack);
+        parentNode.addChild(node);
+    }
+
+    private SystemNode findParentNode(List<SystemNode> nodeStack) {
+        SystemNode parentNode = rootNode;
+        for(int i = 1; i < nodeStack.size(); i++){
+            SystemNode necessaryNode = nodeStack.get(i);
+            for(SystemNode sn : parentNode.getChildren()){
+                if(sn.equals(necessaryNode)){
+                    parentNode = sn;
+                }
+            }
+        }
         return parentNode;
     }
 }
