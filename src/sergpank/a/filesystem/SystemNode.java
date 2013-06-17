@@ -56,7 +56,7 @@ public class SystemNode {
     }
 
     private StringBuffer toString(SystemNode highNode) {
-        StringBuffer line = new StringBuffer(MessageFormat.format("{0} {1}\n",highNode.getName(), highNode.getId()));
+        StringBuffer line = new StringBuffer(MessageFormat.format("{0} {1}\n", highNode.getName(), highNode.getId()));
         for (SystemNode node : highNode.getChildren()) {
             line.append(toString(node));
         }
