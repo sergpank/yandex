@@ -47,4 +47,31 @@ public class FileTree {
         }
         return parentNode;
     }
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+
+        FileTree fileTree = (FileTree)o;
+
+        if (rootNode != null ? !rootNode.equals(fileTree.rootNode) : fileTree.rootNode != null) {
+            return false;
+        }
+
+        boolean result = rootNode.equals(fileTree.getRootNode());
+
+        return result;
+    }
+
+
+    @Override
+    public int hashCode() {
+        return rootNode != null ? rootNode.hashCode() : 0;
+    }
 }

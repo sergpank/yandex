@@ -14,9 +14,6 @@ public class Main {
     }
 
     private static void printFileTree(SystemNode startNode) {
-        System.out.println(startNode.getName() + " " + startNode.getId());
-        for (SystemNode node : startNode.getChildren()) {
-            printFileTree(node);
-        }
+        System.out.println(startNode.toString());
     }
 }

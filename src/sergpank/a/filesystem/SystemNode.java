@@ -1,5 +1,6 @@
 package sergpank.a.filesystem;
 
+import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -42,5 +43,23 @@ public class SystemNode {
 
     public void addChild(SystemNode child){
         childList.add(child);
+    }
+
+
+    @Override
+    public String toString() {
+        StringBuffer line = new StringBuffer(MessageFormat.format("{0} {1}\n", this.getName(), this.getId()));
+        for (SystemNode node : this.getChildren()) {
+            line.append(toString(node));
+        }
+        return line.toString();
+    }
+
+    private StringBuffer toString(SystemNode highNode) {
+        StringBuffer line = new StringBuffer(MessageFormat.format("{0} {1}\n",highNode.getName(), highNode.getId()));
+        for (SystemNode node : highNode.getChildren()) {
+            line.append(toString(node));
+        }
+        return line;
     }
 }
