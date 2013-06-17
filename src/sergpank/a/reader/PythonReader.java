@@ -12,28 +12,30 @@ public class PythonReader extends AbstractReader {
     int level = 1;
     List<SystemNode> nodeStack = new ArrayList<SystemNode>();
 
+    public PythonReader(File file) {
+        super(file);
+    }
+
     @Override
-    public FileTree read(String fileName) {
+    public FileTree read() {
 
         FileTree tree = new FileTree();
 
-        List<String> data = readFile(new File(fileName));
-
-        int nodesNr = Integer.parseInt(data.get(0));
-        String[] rootNodeData = data.get(1).split(" ");
+        int nodesNr = Integer.parseInt(readLine());
+        String[] rootNodeData = readLine().split(" ");
         final SystemNode rootNode = new SystemNode(rootNodeData[0], Integer.parseInt(rootNodeData[1]));
         tree.setRootNode(rootNode);
         nodeStack.add(rootNode);
 
-        growTree(tree, data, nodesNr);
+        growTree(tree, nodesNr);
 
         return tree;
     }
 
-    private void growTree(FileTree tree, List<String> data, int nodesNr) {
+    private void growTree(FileTree tree, int nodesNr) {
         SystemNode previousNode = null;
         for (int i = 2; i <= nodesNr; i++) {
-            String nodeLine = data.get(i);
+            String nodeLine = readLine();
             int nodeLevel = getNodeLevel(nodeLine);
             SystemNode node = parseNode(nodeLine);
 

@@ -5,25 +5,27 @@ import sergpank.a.filesystem.SystemNode;
 
 import java.io.File;
 import java.util.Arrays;
-import java.util.List;
 
 public class FindReader extends AbstractReader {
 
     private String[] parents;
 
+    public FindReader(File file) {
+        super(file);
+    }
+
     @Override
-    public FileTree read(String fileName) {
+    public FileTree read() {
 
         FileTree tree = new FileTree();
 
-        List<String> data = readFile(new File(fileName));
 
-        int nodesNr = Integer.parseInt(data.get(0));
-        SystemNode rootNode = parseNode(data.get(1));
+        int nodesNr = Integer.parseInt(readLine());
+        SystemNode rootNode = parseNode(readLine());
         tree.setRootNode(rootNode);
 
         for(int lineNr = 2; lineNr <= nodesNr; lineNr++){
-            SystemNode node = parseNode(data.get(lineNr));
+            SystemNode node = parseNode(readLine());
             tree.addChild(node, parents);
         }
 

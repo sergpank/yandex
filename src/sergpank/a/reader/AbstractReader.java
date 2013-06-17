@@ -3,31 +3,31 @@ package sergpank.a.reader;
 import sergpank.a.filesystem.FileTree;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public abstract class AbstractReader {
 
     protected Logger logger = Logger.getLogger(this.getClass().getName());
+    private BufferedReader reader;
 
-    protected List<String> readFile(File file){
-        List<String> data = new ArrayList<String>();
+    protected AbstractReader(File file) {
         try {
-            BufferedReader reader = new BufferedReader(new FileReader(file));
-            String line;
-            while((line = reader.readLine()) != null){
-                data.add(line);
-            }
+            reader = new BufferedReader(new FileReader(file));
         } catch (FileNotFoundException e) {
             logger.log(Level.SEVERE, "Unable to open file");
+        }
+    }
+
+    protected String readLine() {
+        String line = null;
+        try {
+            line = reader.readLine();
         } catch (IOException e) {
             logger.log(Level.SEVERE, "Unable to read file");
         }
-        return data;
+        return line;
     }
 
-
-    public abstract FileTree read(String fileName);
+    public abstract FileTree read();
 }

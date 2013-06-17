@@ -5,11 +5,13 @@ import sergpank.a.filesystem.SystemNode;
 import sergpank.a.reader.AbstractReader;
 import sergpank.a.reader.FindReader;
 
+import java.io.File;
+
 public class Main {
 
     public static void main(String[] args) {
-        AbstractReader reader = new FindReader();
-        FileTree fileTree = reader.read("samples/fileTree.find");
+        AbstractReader reader = new FindReader(new File("samples/fileTree.find"));
+        FileTree fileTree = reader.read();
         printFileTree(fileTree.getRootNode());
     }
 
