@@ -1,6 +1,7 @@
 package sergpank.a.reader;
 
 import sergpank.a.filesystem.FileTree;
+import sergpank.a.filesystem.SystemNode;
 
 import java.io.*;
 import java.util.logging.Level;
@@ -9,6 +10,7 @@ import java.util.logging.Logger;
 public abstract class AbstractReader {
 
     protected Logger logger = Logger.getLogger(this.getClass().getName());
+    int nodeNumber = -1;
     private BufferedReader reader;
 
     protected AbstractReader(File file) {
@@ -30,4 +32,15 @@ public abstract class AbstractReader {
     }
 
     public abstract FileTree read();
+
+    protected int getNodeNumber() {
+        if (nodeNumber == -1) {
+            nodeNumber = Integer.parseInt(readLine());
+        }
+        return nodeNumber;
+    }
+
+    protected SystemNode createNode(String[] rootNodeData) {
+        return new SystemNode(rootNodeData[0], Integer.parseInt(rootNodeData[1]));
+    }
 }

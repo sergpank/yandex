@@ -3,11 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="77c3831a-2ca6-4d9e-9b99-241733c8eff5" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sergpank/a/reader/AbstractReader.java" afterPath="$PROJECT_DIR$/src/sergpank/a/reader/AbstractReader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sergpank/a/reader/Acm1Reader.java" afterPath="$PROJECT_DIR$/src/sergpank/a/reader/Acm1Reader.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sergpank/a/reader/FindReader.java" afterPath="$PROJECT_DIR$/src/sergpank/a/reader/FindReader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/sergpank/a/reader/FindReaderTest.java" afterPath="$PROJECT_DIR$/test/sergpank/a/reader/FindReaderTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sergpank/a/Main.java" afterPath="$PROJECT_DIR$/src/sergpank/a/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sergpank/a/reader/PythonReader.java" afterPath="$PROJECT_DIR$/src/sergpank/a/reader/PythonReader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/sergpank/a/reader/PythonReaderTest.java" afterPath="$PROJECT_DIR$/test/sergpank/a/reader/PythonReaderTest.java" />
     </list>
     <ignored path="yandex.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -17,13 +15,13 @@
     <file path="/DirectoryNode.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371373694621" ignored="false" />
     <file path="/Dummy.txt" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371484463685" ignored="false" />
     <file path="/FileTree.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371490308823" ignored="false" />
-    <file path="/fragment.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371491489551" ignored="false" />
+    <file path="/fragment.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371498039509" ignored="false" />
     <file path="/File Header.txt.ft" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371391607356" ignored="false" />
     <file path="/Reader.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371395665162" ignored="false" />
-    <file path="/FindReader.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371497538010" ignored="false" />
+    <file path="/FindReader.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371498417486" ignored="false" />
     <file path="/Main.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371497522233" ignored="false" />
     <file path="/SystemNode.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371492499691" ignored="false" />
-    <file path="/AbstractReader.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371497276291" ignored="false" />
+    <file path="/AbstractReader.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371498527198" ignored="false" />
     <file path="/Overridden Method Body.txt.ft" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371397442715" ignored="false" />
     <file path="/New Method Body.txt.ft" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371397523445" ignored="false" />
     <file path="/a.dummy" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371453192484" ignored="false" />
@@ -43,7 +41,7 @@
     <file path="/PythonReader.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371497547627" ignored="false" />
     <file path="/PythonReaderTest.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371497464729" ignored="false" />
     <file path="/CommonTest.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371491785103" ignored="false" />
-    <file path="/Acm1Reader.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371493474902" ignored="false" />
+    <file path="/Acm1Reader.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371498655941" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +122,7 @@
       <file leaf-file-name="FileTree.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sergpank/a/filesystem/FileTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="6" selection-start="1524" selection-end="1524" vertical-scroll-proportion="0.0">
+            <state line="24" column="16" selection-start="437" selection-end="437" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -141,19 +139,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FindReaderTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/sergpank/a/reader/FindReaderTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="80" selection-start="341" selection-end="341" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Acm1Reader.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sergpank/a/reader/Acm1Reader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="4" selection-start="142" selection-end="142" vertical-scroll-proportion="0.20913884">
+            <state line="21" column="28" selection-start="509" selection-end="509" vertical-scroll-proportion="0.6050847">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -161,10 +150,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sergpank/a/Main.java">
+      <file leaf-file-name="AbstractReader.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sergpank/a/reader/AbstractReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="41" selection-start="309" selection-end="309" vertical-scroll-proportion="0.0">
+            <state line="38" column="9" selection-start="1027" selection-end="1027" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -173,16 +162,7 @@
       <file leaf-file-name="FindReader.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sergpank/a/reader/FindReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="27" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractReader.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sergpank/a/reader/AbstractReader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="5" selection-start="789" selection-end="789" vertical-scroll-proportion="0.0">
+            <state line="27" column="42" selection-start="668" selection-end="668" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -191,31 +171,11 @@
       <file leaf-file-name="PythonReader.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sergpank/a/reader/PythonReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="10" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0">
+            <state line="34" column="4" selection-start="758" selection-end="758" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#299#311#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PythonReaderTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/sergpank/a/reader/PythonReaderTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="53" selection-start="308" selection-end="308" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommonTestData.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/sergpank/a/reader/CommonTestData.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="49" selection-start="755" selection-end="755" vertical-scroll-proportion="0.0">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -250,13 +210,13 @@
         <option value="$PROJECT_DIR$/test/sergpank/a/reader/CommonTest.java" />
         <option value="$PROJECT_DIR$/src/sergpank/a/filesystem/SystemNode.java" />
         <option value="$PROJECT_DIR$/test/sergpank/a/reader/CommonTestData.java" />
-        <option value="$PROJECT_DIR$/src/sergpank/a/reader/AbstractReader.java" />
         <option value="$PROJECT_DIR$/test/sergpank/a/reader/FindReaderTest.java" />
         <option value="$PROJECT_DIR$/test/sergpank/a/reader/PythonReaderTest.java" />
-        <option value="$PROJECT_DIR$/src/sergpank/a/reader/Acm1Reader.java" />
         <option value="$PROJECT_DIR$/src/sergpank/a/Main.java" />
-        <option value="$PROJECT_DIR$/src/sergpank/a/reader/FindReader.java" />
         <option value="$PROJECT_DIR$/src/sergpank/a/reader/PythonReader.java" />
+        <option value="$PROJECT_DIR$/src/sergpank/a/reader/FindReader.java" />
+        <option value="$PROJECT_DIR$/src/sergpank/a/reader/AbstractReader.java" />
+        <option value="$PROJECT_DIR$/src/sergpank/a/reader/Acm1Reader.java" />
       </list>
     </option>
   </component>
@@ -930,15 +890,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sergpank/a/filesystem/FileTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="6" selection-start="1524" selection-end="1524" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sergpank/a/filesystem/SystemNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="77" column="44" selection-start="1965" selection-end="1965" vertical-scroll-proportion="0.0">
@@ -949,13 +900,6 @@
     <entry file="file://$PROJECT_DIR$/test/sergpank/a/reader/CommonTestData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="49" selection-start="755" selection-end="755" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sergpank/a/reader/AbstractReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="5" selection-start="789" selection-end="789" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -983,16 +927,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sergpank/a/reader/FindReader.java">
+    <entry file="file://$PROJECT_DIR$/src/sergpank/a/filesystem/FileTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="27" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="24" column="16" selection-start="437" selection-end="437" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sergpank/a/reader/PythonReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="10" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0">
+        <state line="34" column="4" selection-start="758" selection-end="758" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#299#311#0" expanded="true" />
@@ -1000,9 +946,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sergpank/a/reader/FindReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="42" selection-start="668" selection-end="668" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sergpank/a/reader/AbstractReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="9" selection-start="1027" selection-end="1027" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sergpank/a/reader/Acm1Reader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="4" selection-start="142" selection-end="142" vertical-scroll-proportion="0.20913884">
+        <state line="21" column="28" selection-start="509" selection-end="509" vertical-scroll-proportion="0.6050847">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

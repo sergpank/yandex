@@ -19,12 +19,11 @@ public class FindReader extends AbstractReader {
 
         FileTree tree = new FileTree();
 
-
-        int nodesNr = Integer.parseInt(readLine());
+        int nodesNr = getNodeNumber();
         SystemNode rootNode = parseNode(readLine());
         tree.setRootNode(rootNode);
 
-        for(int lineNr = 2; lineNr <= nodesNr; lineNr++){
+        for (int lineNr = 2; lineNr <= nodesNr; lineNr++) {
             SystemNode node = parseNode(readLine());
             tree.addChild(node, parents);
         }
@@ -39,9 +38,9 @@ public class FindReader extends AbstractReader {
         String[] nodes = pathAndId[0].split("/");
         parents = null;
         String name;
-        if(nodes.length == 1){
+        if (nodes.length == 1) {
             name = nodes[0];
-        } else{
+        } else {
             name = nodes[nodes.length - 1];
             parents = Arrays.copyOf(nodes, nodes.length - 1);
         }
