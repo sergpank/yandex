@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="77c3831a-2ca6-4d9e-9b99-241733c8eff5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="77c3831a-2ca6-4d9e-9b99-241733c8eff5" name="Default" comment="" />
     <ignored path="yandex.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Node.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371394554819" ignored="false" />
@@ -16,7 +14,7 @@
     <file path="/File Header.txt.ft" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371391607356" ignored="false" />
     <file path="/Reader.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371395665162" ignored="false" />
     <file path="/FindReader.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371498417486" ignored="false" />
-    <file path="/Main.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371578116129" ignored="false" />
+    <file path="/Main.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371581135997" ignored="false" />
     <file path="/SystemNode.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371492499691" ignored="false" />
     <file path="/AbstractReader.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371550431647" ignored="false" />
     <file path="/Overridden Method Body.txt.ft" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371397442715" ignored="false" />
@@ -45,7 +43,7 @@
     <file path="/Acm3Reader.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371550985393" ignored="false" />
     <file path="/XmlReade.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371578526705" ignored="false" />
     <file path="/XmlReader.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371579341981" ignored="false" />
-    <file path="$PROJECT_DIR$/../Experiments/src/Main.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371578118111" ignored="false" />
+    <file path="$PROJECT_DIR$/../Experiments/src/Main.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371581142159" ignored="false" />
     <file path="/XmlReaderTest.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371578678207" ignored="false" />
     <file path="/fileTree.xml" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371579137302" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -152,7 +150,7 @@
       <file leaf-file-name="XmlReader.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sergpank/a/reader/XmlReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="12" selection-start="353" selection-end="353" vertical-scroll-proportion="-0.019400353">
+            <state line="42" column="45" selection-start="1204" selection-end="1204" vertical-scroll-proportion="0.55026454">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#392#404#0" expanded="true" />
@@ -792,7 +790,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48303714" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.249694" sideWeight="0.68239355" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39470655" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -803,7 +801,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26744187" sideWeight="0.68239355" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31760645" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31760645" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32986537" sideWeight="0.6182238" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -994,7 +992,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sergpank/a/reader/XmlReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="12" selection-start="353" selection-end="353" vertical-scroll-proportion="-0.019400353">
+        <state line="42" column="45" selection-start="1204" selection-end="1204" vertical-scroll-proportion="0.55026454">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#392#404#0" expanded="true" />
