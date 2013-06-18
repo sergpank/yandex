@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77c3831a-2ca6-4d9e-9b99-241733c8eff5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sergpank/a/reader/AbstractReader.java" afterPath="$PROJECT_DIR$/src/sergpank/a/reader/AbstractReader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sergpank/a/reader/Acm1Reader.java" afterPath="$PROJECT_DIR$/src/sergpank/a/reader/Acm1Reader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sergpank/a/reader/Acm2Reader.java" afterPath="$PROJECT_DIR$/src/sergpank/a/reader/Acm2Reader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sergpank/a/reader/FindReader.java" afterPath="$PROJECT_DIR$/src/sergpank/a/reader/FindReader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sergpank/a/reader/PythonReader.java" afterPath="$PROJECT_DIR$/src/sergpank/a/reader/PythonReader.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="yandex.iws" />
@@ -11,15 +15,15 @@
     <file path="/FileType.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371368151790" ignored="false" />
     <file path="/FileNode.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371373849453" ignored="false" />
     <file path="/DirectoryNode.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371373694621" ignored="false" />
-    <file path="/Dummy.txt" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371534036124" ignored="false" />
+    <file path="/Dummy.txt" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371549794459" ignored="false" />
     <file path="/FileTree.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371490308823" ignored="false" />
-    <file path="/fragment.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371534880618" ignored="false" />
+    <file path="/fragment.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371550998952" ignored="false" />
     <file path="/File Header.txt.ft" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371391607356" ignored="false" />
     <file path="/Reader.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371395665162" ignored="false" />
     <file path="/FindReader.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371498417486" ignored="false" />
     <file path="/Main.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371497522233" ignored="false" />
     <file path="/SystemNode.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371492499691" ignored="false" />
-    <file path="/AbstractReader.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371498527198" ignored="false" />
+    <file path="/AbstractReader.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371550431647" ignored="false" />
     <file path="/Overridden Method Body.txt.ft" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371397442715" ignored="false" />
     <file path="/New Method Body.txt.ft" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371397523445" ignored="false" />
     <file path="/a.dummy" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371453192484" ignored="false" />
@@ -36,13 +40,14 @@
     <file path="C:/WORK/MinePlanningGitFull/trunk/continuous-delivery/threshold.properties" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371455303228" ignored="false" />
     <file path="/PyhonReader.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371492042296" ignored="false" />
     <file path="/Implemented Method Body.txt.ft" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371487941577" ignored="false" />
-    <file path="/PythonReader.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371497547627" ignored="false" />
+    <file path="/PythonReader.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371551054810" ignored="false" />
     <file path="/PythonReaderTest.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371497464729" ignored="false" />
     <file path="/CommonTest.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371491785103" ignored="false" />
-    <file path="/Acm1Reader.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371500839193" ignored="false" />
+    <file path="/Acm1Reader.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371550134992" ignored="false" />
     <file path="/Acm1ReaderTest.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371500976429" ignored="false" />
-    <file path="/Acm2Reader.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371535141625" ignored="false" />
+    <file path="/Acm2Reader.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371550682032" ignored="false" />
     <file path="/Acm2ReaderTest.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371534955308" ignored="false" />
+    <file path="/Acm3Reader.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371550985393" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +55,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/yandex$All_in_yandex.coverage" NAME="All in yandex Coverage Results" MODIFIED="1371535474474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -93,8 +101,7 @@
         <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
       </breakpoint>
     </breakpoint_any>
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <exception_breakpoints>
+    <exception_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint class_name="java.lang.NullPointerException" package_name="java.lang">
         <option name="NOTIFY_CAUGHT" value="true" />
         <option name="NOTIFY_UNCAUGHT" value="true" />
@@ -113,6 +120,8 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </exception_breakpoints>
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -125,11 +134,8 @@
       <file leaf-file-name="Acm2Reader.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sergpank/a/reader/Acm2Reader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="44" selection-start="623" selection-end="623" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#319#340#0" expanded="true" />
-              </folding>
+            <state line="45" column="25" selection-start="987" selection-end="987" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -137,7 +143,55 @@
       <file leaf-file-name="Acm2ReaderTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/sergpank/a/reader/Acm2ReaderTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="318" selection-end="318" vertical-scroll-proportion="0.0">
+            <state line="13" column="8" selection-start="243" selection-end="396" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fileTree.acm2" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/samples/fileTree.acm2">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="1" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SystemNode.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sergpank/a/filesystem/SystemNode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="44" selection-start="461" selection-end="461" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommonTestData.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/sergpank/a/reader/CommonTestData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="13" selection-start="41" selection-end="41" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Acm3Reader.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sergpank/a/reader/Acm3Reader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="49" column="21" selection-start="1082" selection-end="1082" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#299#320#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Acm3ReaderTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/sergpank/a/reader/Acm3ReaderTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="40" selection-start="275" selection-end="275" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -145,10 +199,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fileTree.acm2" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/samples/fileTree.acm2">
+      <file leaf-file-name="AbstractReader.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sergpank/a/reader/AbstractReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="1" selection-start="301" selection-end="301" vertical-scroll-proportion="0.5895954">
+            <state line="43" column="50" selection-start="1170" selection-end="1170" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Acm1Reader.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sergpank/a/reader/Acm1Reader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="51" selection-start="923" selection-end="923" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#307#328#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PythonReader.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sergpank/a/reader/PythonReader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="53" column="41" selection-start="1411" selection-end="1411" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fileTree.acm3" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/samples/fileTree.acm3">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="1" selection-start="321" selection-end="321" vertical-scroll-proportion="0.5895954">
               <folding />
             </state>
           </provider>
@@ -175,22 +259,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/sergpank/a/filesystem/FileTree.java" />
-        <option value="$PROJECT_DIR$/test/sergpank/a/reader/CommonTest.java" />
-        <option value="$PROJECT_DIR$/src/sergpank/a/filesystem/SystemNode.java" />
         <option value="$PROJECT_DIR$/test/sergpank/a/reader/CommonTestData.java" />
         <option value="$PROJECT_DIR$/test/sergpank/a/reader/FindReaderTest.java" />
         <option value="$PROJECT_DIR$/test/sergpank/a/reader/PythonReaderTest.java" />
         <option value="$PROJECT_DIR$/src/sergpank/a/Main.java" />
-        <option value="$PROJECT_DIR$/src/sergpank/a/reader/PythonReader.java" />
         <option value="$PROJECT_DIR$/src/sergpank/a/reader/FindReader.java" />
-        <option value="$PROJECT_DIR$/src/sergpank/a/reader/AbstractReader.java" />
-        <option value="$PROJECT_DIR$/src/sergpank/a/reader/Acm1Reader.java" />
         <option value="$PROJECT_DIR$/test/sergpank/a/reader/Acm1ReaderTest.java" />
         <option value="$PROJECT_DIR$/samples/fileTree.acm1" />
         <option value="$PROJECT_DIR$/test/sergpank/a/reader/Acm2ReaderTest.java" />
-        <option value="$PROJECT_DIR$/src/sergpank/a/reader/Acm2Reader.java" />
         <option value="$PROJECT_DIR$/samples/fileTree.acm2" />
+        <option value="$PROJECT_DIR$/src/sergpank/a/reader/AbstractReader.java" />
+        <option value="$PROJECT_DIR$/src/sergpank/a/reader/Acm1Reader.java" />
+        <option value="$PROJECT_DIR$/src/sergpank/a/reader/Acm2Reader.java" />
+        <option value="$PROJECT_DIR$/test/sergpank/a/reader/Acm3ReaderTest.java" />
+        <option value="$PROJECT_DIR$/src/sergpank/a/reader/PythonReader.java" />
+        <option value="$PROJECT_DIR$/src/sergpank/a/reader/Acm3Reader.java" />
+        <option value="$PROJECT_DIR$/samples/fileTree.acm3" />
       </list>
     </option>
   </component>
@@ -247,7 +331,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -407,6 +490,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -454,12 +538,12 @@
     <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="sergpank.a.reader" />
-    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="sergpank.a.reader.CommonTestData" />
       <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="sergpank.a.reader" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\TEMP\playground\yandex\samples" />
@@ -472,41 +556,7 @@
       <recent name="sergpank" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Acm2ReaderTest.testRead">
-    <configuration default="false" name="FindReaderTest.testRead" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="sergpank.a.reader.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="yandex" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="sergpank.a.reader" />
-      <option name="MAIN_CLASS_NAME" value="sergpank.a.reader.FindReaderTest" />
-      <option name="METHOD_NAME" value="testRead" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.All in yandex">
     <configuration default="false" name="PythonReaderTest.testRead" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -560,7 +610,9 @@
       </option>
       <envs />
       <patterns />
+      <RunnerSettings RunnerId="Cover" />
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Cover" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -604,6 +656,40 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="sergpank.a.reader" />
       <option name="MAIN_CLASS_NAME" value="sergpank.a.reader.Acm2ReaderTest" />
+      <option name="METHOD_NAME" value="testRead" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Acm3ReaderTest.testRead" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="sergpank.a.reader.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="yandex" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="sergpank.a.reader" />
+      <option name="MAIN_CLASS_NAME" value="sergpank.a.reader.Acm3ReaderTest" />
       <option name="METHOD_NAME" value="testRead" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -690,19 +776,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.FindReaderTest.testRead" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.PythonReaderTest.testRead" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.All in yandex" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.Acm1ReaderTest.testRead" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.Acm2ReaderTest.testRead" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.PythonReaderTest.testRead" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.All in yandex" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.Acm1ReaderTest.testRead" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.Acm2ReaderTest.testRead" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.Acm3ReaderTest.testRead" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.Acm2ReaderTest.testRead" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.All in yandex" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.Acm1ReaderTest.testRead" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.PythonReaderTest.testRead" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.FindReaderTest.testRead" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.All in yandex" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.Acm3ReaderTest.testRead" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.Acm2ReaderTest.testRead" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.Acm1ReaderTest.testRead" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.PythonReaderTest.testRead" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -738,7 +824,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48303714" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -751,14 +837,15 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31987077" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32855567" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284169" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18783352" sideWeight="0.6814159" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31858408" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2678762" sideWeight="0.6814159" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31858408" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32977587" sideWeight="0.6814159" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -837,16 +924,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/sergpank/b/MatchingAnalyser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="29" selection-start="50" selection-end="50" vertical-scroll-proportion="0.05733558" />
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.6.0_45/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="132" column="19" selection-start="6092" selection-end="6092" vertical-scroll-proportion="0.33333334" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/samples/fileTree.find">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="39" selection-start="0" selection-end="362" vertical-scroll-proportion="0.0" />
@@ -871,30 +948,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sergpank/a/reader/AbstractReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="9" selection-start="1027" selection-end="1027" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sergpank/a/reader/Acm1Reader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="28" selection-start="433" selection-end="433" vertical-scroll-proportion="-0.09137056">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#299#320#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sergpank/a/filesystem/SystemNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="129" selection-end="129" vertical-scroll-proportion="-1.5101523">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sergpank/a/filesystem/FileTree.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="16" selection-start="437" selection-end="437" vertical-scroll-proportion="0.043147206">
@@ -902,28 +955,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/sergpank/a/reader/Acm2ReaderTest.java">
+    <entry file="file://$PROJECT_DIR$/samples/fileTree.acm2">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="318" selection-end="318" vertical-scroll-proportion="0.0">
+        <state line="24" column="1" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sergpank/a/filesystem/SystemNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="44" selection-start="461" selection-end="461" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/sergpank/a/reader/CommonTestData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="13" selection-start="41" selection-end="41" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sergpank/a/reader/AbstractReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="50" selection-start="1170" selection-end="1170" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sergpank/a/reader/Acm1Reader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="51" selection-start="923" selection-end="923" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#307#328#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sergpank/a/reader/Acm2Reader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="44" selection-start="623" selection-end="623" vertical-scroll-proportion="0.0">
+        <state line="45" column="25" selection-start="987" selection-end="987" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/sergpank/a/reader/Acm2ReaderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="8" selection-start="243" selection-end="396" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/sergpank/a/reader/Acm3ReaderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="40" selection-start="275" selection-end="275" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#319#340#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/samples/fileTree.acm2">
+    <entry file="file://$PROJECT_DIR$/src/sergpank/a/reader/PythonReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="1" selection-start="301" selection-end="301" vertical-scroll-proportion="0.5895954">
+        <state line="53" column="41" selection-start="1411" selection-end="1411" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sergpank/a/reader/Acm3Reader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="21" selection-start="1082" selection-end="1082" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#299#320#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/fileTree.acm3">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="1" selection-start="321" selection-end="321" vertical-scroll-proportion="0.5895954">
           <folding />
         </state>
       </provider>

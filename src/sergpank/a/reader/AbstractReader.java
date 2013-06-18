@@ -33,14 +33,15 @@ public abstract class AbstractReader {
 
     public abstract FileTree read();
 
-    protected int getNodeNumber() {
+    protected int getNodesNumber() {
         if (nodeNumber == -1) {
             nodeNumber = Integer.parseInt(readLine());
         }
         return nodeNumber;
     }
 
-    protected SystemNode createNode(String[] rootNodeData) {
-        return new SystemNode(rootNodeData[0], Integer.parseInt(rootNodeData[1]));
+    protected SystemNode createNode(String nodeString) {
+        String[] nodeData = nodeString.split(" ");
+        return new SystemNode(nodeData[0], Integer.parseInt(nodeData[1]));
     }
 }

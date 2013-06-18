@@ -7,46 +7,55 @@ import java.io.File;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-public class Acm1Reader extends AbstractReader {
+public class Acm1Reader
+        extends AbstractReader {
 
     private Map<Integer, SystemNode> nodeMap = new LinkedHashMap<Integer, SystemNode>();
+
 
     protected Acm1Reader(File file) {
         super(file);
     }
 
+
     @Override
     public FileTree read() {
 
         FileTree tree = new FileTree();
-        int nodeNumber = getNodeNumber();
-        SystemNode rootNode = createNode(readLine().split(" "));
+        getNodesNumber();
+        SystemNode rootNode = createNode(readLine());
         tree.setRootNode(rootNode);
         nodeMap.put(rootNode.getId(), rootNode);
 
-        growTree(tree, nodeNumber);
+        growTree();
 
         return tree;
     }
 
-    private void growTree(FileTree tree, int nodeNumber) {
-        fillNodeMap(nodeNumber);
 
-        for(int key : nodeMap.keySet()){
+    private void growTree() {
+        fillNodeMap();
+        connectNodes();
+    }
+
+
+    private void fillNodeMap() {
+        for (int i = 1; i < getNodesNumber(); i++) {
+            SystemNode node = createNode(readLine());
+            nodeMap.put(node.getId(), node);
+        }
+    }
+
+
+    private void connectNodes() {
+        for (int key : nodeMap.keySet()) {
             String[] split = readLine().split(" ");
             SystemNode currentParent = nodeMap.get(key);
-            for(int i = 1; i <= Integer.parseInt(split[0]); i++){
+            for (int i = 1; i <= Integer.parseInt(split[0]); i++) {
                 SystemNode currentChild = nodeMap.get(Integer.parseInt(split[i]));
                 currentParent.addChild(currentChild);
                 currentChild.setParent(currentParent);
             }
-        }
-    }
-
-    private void fillNodeMap(int nodeNumber) {
-        for(int i = 1; i < nodeNumber; i++){
-            SystemNode node = createNode(readLine().split(" "));
-            nodeMap.put(node.getId(), node);
         }
     }
 }

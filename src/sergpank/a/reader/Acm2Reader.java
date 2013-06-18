@@ -30,6 +30,20 @@ public class Acm2Reader extends AbstractReader {
 
     private SystemNode growTree() {
         readNodes();
+        SystemNode rootNode = connectNodes();
+        return rootNode;
+    }
+
+
+    private void readNodes() {
+        for(int i = 1; i <= getNodesNumber(); i++){
+            SystemNode node = createNode(readLine());
+            nodeMap.put(node.getId(), node);
+        }
+    }
+
+
+    private SystemNode connectNodes() {
         SystemNode rootNode = null;
         for(Entry<Integer, SystemNode> entry : nodeMap.entrySet()){
             int parentId = Integer.parseInt(readLine());
@@ -42,13 +56,5 @@ public class Acm2Reader extends AbstractReader {
             }
         }
         return rootNode;
-    }
-
-
-    private void readNodes() {
-        for(int i = 1; i <= getNodeNumber(); i++){
-            SystemNode node = createNode(readLine().split(" "));
-            nodeMap.put(node.getId(), node);
-        }
     }
 }

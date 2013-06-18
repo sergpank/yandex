@@ -21,9 +21,8 @@ public class PythonReader extends AbstractReader {
 
         FileTree tree = new FileTree();
 
-        int nodesNr = getNodeNumber();
-        String[] rootNodeData = readLine().split(" ");
-        final SystemNode rootNode = createNode(rootNodeData);
+        int nodesNr = getNodesNumber();
+        final SystemNode rootNode = createNode(readLine());
         tree.setRootNode(rootNode);
         nodeStack.add(rootNode);
 
@@ -52,8 +51,7 @@ public class PythonReader extends AbstractReader {
 
     private SystemNode parseNode(String nodeLine) {
         String trim = nodeLine.trim();
-        String[] split = trim.split(" ");
-        SystemNode node = createNode(split);
+        SystemNode node = createNode(trim);
         return node;
     }
 

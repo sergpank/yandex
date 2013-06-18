@@ -19,7 +19,7 @@ public class FindReader extends AbstractReader {
 
         FileTree tree = new FileTree();
 
-        int nodesNr = getNodeNumber();
+        int nodesNr = getNodesNumber();
         SystemNode rootNode = parseNode(readLine());
         tree.setRootNode(rootNode);
 
