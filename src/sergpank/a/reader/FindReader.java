@@ -4,14 +4,15 @@ import sergpank.a.filesystem.FileTree;
 import sergpank.a.filesystem.SystemNode;
 
 import java.io.File;
+import java.io.Reader;
 import java.util.Arrays;
 
 public class FindReader extends AbstractReader {
 
     private String[] parents;
 
-    public FindReader(File file) {
-        super(file);
+    public FindReader(Reader reader) {
+        super(reader);
     }
 
     @Override

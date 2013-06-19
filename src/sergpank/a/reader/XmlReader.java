@@ -4,6 +4,7 @@ import sergpank.a.filesystem.FileTree;
 import sergpank.a.filesystem.SystemNode;
 
 import java.io.File;
+import java.io.Reader;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
@@ -14,8 +15,8 @@ public class XmlReader extends AbstractReader{
     private static final String ID = "id";
     private Stack<SystemNode> nodeStack = new Stack<SystemNode>();
 
-    protected XmlReader(File file) {
-        super(file);
+    protected XmlReader(Reader reader) {
+        super(reader);
     }
 
     @Override
@@ -24,24 +25,23 @@ public class XmlReader extends AbstractReader{
         SystemNode rootNode = parseDir(readLine());
         nodeStack.push(rootNode);
         tree.setRootNode(rootNode);
-        growTree();
+        growTree(tree);
         return tree;
     }
 
-    private void growTree() {
+    private void growTree(FileTree tree) {
         String line;
         while ( (line = readLine()) != null ){
             if(isFile(line)){
-                SystemNode node = parseFile(line);
-                nodeStack.peek().addChild(node);
+                SystemNode child = parseFile(line);
+                tree.addChild(nodeStack.peek(), child);
             } else if(isEndDir(line)){
                 nodeStack.pop();
             }
             else{
-                SystemNode node = parseDir(line);
-                node.setParent(nodeStack.peek());
-                nodeStack.peek().addChild(node);
-                nodeStack.push(node);
+                SystemNode child = parseDir(line);
+                tree.addChild(nodeStack.peek(), child);
+                nodeStack.push(child);
             }
         }
     }

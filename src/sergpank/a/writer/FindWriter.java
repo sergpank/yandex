@@ -15,6 +15,7 @@ public class FindWriter extends AbstractWriter {
 
     @Override
     public void write() {
+        System.out.println(tree.getNodeCount());
         dig(tree.getRootNode());
     }
 

@@ -4,6 +4,7 @@ import sergpank.a.filesystem.FileTree;
 import sergpank.a.filesystem.SystemNode;
 
 import java.io.File;
+import java.io.Reader;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,8 +13,8 @@ public class PythonReader extends AbstractReader {
     int level = 1;
     List<SystemNode> nodeStack = new ArrayList<SystemNode>();
 
-    public PythonReader(File file) {
-        super(file);
+    public PythonReader(Reader reader) {
+        super(reader);
     }
 
     @Override

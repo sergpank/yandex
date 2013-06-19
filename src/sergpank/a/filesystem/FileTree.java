@@ -6,13 +6,19 @@ import java.util.List;
 public class FileTree {
 
     private SystemNode rootNode;
+    private int nodeCount;
 
     public SystemNode getRootNode() {
         return rootNode;
     }
 
+    public int getNodeCount() {
+        return nodeCount;
+    }
+
     public void setRootNode(SystemNode rootNode) {
         this.rootNode = rootNode;
+        nodeCount++;
     }
 
     /**
@@ -29,6 +35,7 @@ public class FileTree {
             }}, parents);
             child.setParent(parentNode);
             parentNode.addChild(child);
+            nodeCount++;
         }
     }
 
@@ -60,6 +67,7 @@ public class FileTree {
     public void addChild(SystemNode node, List<SystemNode> nodeStack) {
         SystemNode parentNode = findParentNode(nodeStack);
         parentNode.addChild(node);
+        nodeCount++;
     }
 
     private SystemNode findParentNode(List<SystemNode> nodeStack) {
@@ -73,5 +81,11 @@ public class FileTree {
             }
         }
         return parentNode;
+    }
+
+    public void addChild(SystemNode parent, SystemNode child) {
+        parent.addChild(child);
+        child.setParent(parent);
+        nodeCount++;
     }
 }

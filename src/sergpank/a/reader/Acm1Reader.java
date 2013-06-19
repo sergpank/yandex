@@ -4,6 +4,7 @@ import sergpank.a.filesystem.FileTree;
 import sergpank.a.filesystem.SystemNode;
 
 import java.io.File;
+import java.io.Reader;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -13,8 +14,8 @@ public class Acm1Reader
     private Map<Integer, SystemNode> nodeMap = new LinkedHashMap<Integer, SystemNode>();
 
 
-    protected Acm1Reader(File file) {
-        super(file);
+    protected Acm1Reader(Reader reader) {
+        super(reader);
     }
 
 
@@ -27,15 +28,15 @@ public class Acm1Reader
         tree.setRootNode(rootNode);
         nodeMap.put(rootNode.getId(), rootNode);
 
-        growTree();
+        growTree(tree);
 
         return tree;
     }
 
 
-    private void growTree() {
+    private void growTree(FileTree tree) {
         fillNodeMap();
-        connectNodes();
+        connectNodes(tree);
     }
 
 
@@ -47,14 +48,13 @@ public class Acm1Reader
     }
 
 
-    private void connectNodes() {
+    private void connectNodes(FileTree tree) {
         for (int key : nodeMap.keySet()) {
             String[] split = readLine().split(" ");
             SystemNode currentParent = nodeMap.get(key);
             for (int i = 1; i <= Integer.parseInt(split[0]); i++) {
                 SystemNode currentChild = nodeMap.get(Integer.parseInt(split[i]));
-                currentParent.addChild(currentChild);
-                currentChild.setParent(currentParent);
+                tree.addChild(currentParent, currentChild);
             }
         }
     }

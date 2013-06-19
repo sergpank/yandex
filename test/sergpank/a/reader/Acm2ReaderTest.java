@@ -1,9 +1,9 @@
 package sergpank.a.reader;
 
-import java.io.File;
-
 import junit.framework.Assert;
 import org.junit.Test;
+import sergpank.CommonTestData;
+import sergpank.a.filesystem.FileTree;
 
 public class Acm2ReaderTest
         extends CommonTestData {
@@ -11,7 +11,9 @@ public class Acm2ReaderTest
     @Test
     public void testRead()
             throws Exception {
-        AbstractReader reader = new Acm2Reader(new File("samples/fileTree.acm2"));
-        Assert.assertEquals(expected, reader.read().getRootNode().toString());
+        AbstractReader reader = new Acm2Reader(getReader("samples/fileTree.acm2"));
+        FileTree tree = reader.read();
+        Assert.assertEquals(expected, tree.getRootNode().toString());
+        Assert.assertEquals("node count error", 13, tree.getNodeCount());
     }
 }

@@ -1,6 +1,23 @@
-package sergpank.a.reader;
+package sergpank;
+
+import java.io.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class CommonTestData {
+
+
+    protected Logger logger = Logger.getLogger(this.getClass().getName());
+
+    protected Reader getReader(final String fileName){
+        Reader reader = null;
+        try {
+            reader = new FileReader(new File(fileName));
+        } catch (FileNotFoundException e) {
+            logger.log(Level.SEVERE, "Unable to open file " + fileName);
+        }
+        return reader;
+    }
 
     protected String expected =
             ". 0\n" +

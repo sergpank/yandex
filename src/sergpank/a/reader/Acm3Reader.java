@@ -1,6 +1,7 @@
 package sergpank.a.reader;
 
 import java.io.File;
+import java.io.Reader;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -11,8 +12,8 @@ public class Acm3Reader extends AbstractReader {
 
     private Map<Integer, SystemNode> nodeMap = new LinkedHashMap<Integer, SystemNode>();
 
-    protected Acm3Reader(File file) {
-        super(file);
+    protected Acm3Reader(Reader reader) {
+        super(reader);
     }
 
 
@@ -20,19 +21,19 @@ public class Acm3Reader extends AbstractReader {
     public FileTree read() {
         FileTree tree = new FileTree();
 
-        SystemNode rootNode = growTree();
+        SystemNode rootNode = growTree(tree);
         tree.setRootNode(rootNode);
 
         return tree;
     }
 
 
-    private SystemNode growTree() {
+    private SystemNode growTree(FileTree tree) {
         getNodesNumber();
         SystemNode rootNode = createNode(readLine());
         nodeMap.put(rootNode.getId(), rootNode);
         readNodes();
-        connectNodes();
+        connectNodes(tree);
 
         return rootNode;
     }
@@ -46,13 +47,12 @@ public class Acm3Reader extends AbstractReader {
     }
 
 
-    private void connectNodes() {
+    private void connectNodes(FileTree tree) {
         for(int i = 1; i < getNodesNumber(); i++){
             String[] vertexId = readLine().split(" ");
             SystemNode parent = nodeMap.get(Integer.parseInt(vertexId[0]));
             SystemNode child = nodeMap.get(Integer.parseInt(vertexId[1]));
-            parent.addChild(child);
-            child.setParent(parent);
+            tree.addChild(parent, child);
         }
     }
 }
