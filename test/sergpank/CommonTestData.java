@@ -16,13 +16,8 @@ import java.util.logging.Logger;
 
 public class CommonTestData {
 
-    private final ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-
-    @Before
-    public void setUpStream(){
-        System.setOut(new PrintStream(byteArrayOutputStream));
-    }
-
+    ByteArrayOutputStream byteArrayStream = new ByteArrayOutputStream();
+    protected final PrintStream printStream = new PrintStream(byteArrayStream);
 
     protected Logger logger = Logger.getLogger(this.getClass().getName());
 
@@ -59,6 +54,6 @@ public class CommonTestData {
             fileData.append(line);
             fileData.append(System.getProperty("line.separator"));
         }
-        Assert.assertEquals(fileData.toString(), byteArrayOutputStream.toString());
+        Assert.assertEquals(fileData.toString(), byteArrayStream.toString());
     }
 }

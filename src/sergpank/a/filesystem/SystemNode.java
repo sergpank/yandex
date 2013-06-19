@@ -1,20 +1,27 @@
 package sergpank.a.filesystem;
 
 import java.text.MessageFormat;
-import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
 
 public class SystemNode {
 
     protected int id;
     protected String name;
     private SystemNode parent;
-    private List<SystemNode> childList;
+    private Set<SystemNode> childSet;
 
     public SystemNode(String name, int id) {
         this.id = id;
         this.name = name;
-        childList = new ArrayList<SystemNode>();
+        childSet = new TreeSet<SystemNode>(new Comparator<SystemNode>() {
+            @Override
+            public int compare(SystemNode node1, SystemNode node2) {
+                return node1.getId() - node2.getId();
+            }
+        });
     }
 
     public int getId(){
@@ -33,12 +40,12 @@ public class SystemNode {
         this.parent = parent;
     }
 
-    public List<SystemNode> getChildren() {
-        return childList;
+    public Set<SystemNode> getChildren() {
+        return childSet;
     }
 
     public void addChild(SystemNode child){
-        childList.add(child);
+        childSet.add(child);
         child.setParent(this);
     }
 

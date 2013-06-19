@@ -2,6 +2,8 @@ package sergpank.a.filesystem;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
 
 public class FileTree {
 
@@ -30,7 +32,7 @@ public class FileTree {
      */
     public void addChild(SystemNode child, String[] parents) {
         if (parents != null) {
-            SystemNode parentNode = findParentNode(new ArrayList<SystemNode>() {{
+            SystemNode parentNode = findParentNode(new TreeSet<SystemNode>() {{
                 add(rootNode);
             }}, parents);
             child.setParent(parentNode);
@@ -39,11 +41,11 @@ public class FileTree {
         }
     }
 
-    private SystemNode findParentNode(List<SystemNode> currentLevelNodes, String[] parents) {
-        SystemNode parentNode = currentLevelNodes.get(0);
-        for(int i = 0; i < currentLevelNodes.size(); i++){
-            if(currentLevelNodes.get(i).getName().equals(parents[0])){
-                parentNode = currentLevelNodes.get(i);
+    private SystemNode findParentNode(Set<SystemNode> currentLevelNodes, String[] parents) {
+        SystemNode parentNode = null;
+        for(SystemNode node : currentLevelNodes){
+            if(node.getName().equals(parents[0])){
+                parentNode = node;
                 break;
             }
         }

@@ -16,7 +16,7 @@ public class FindWriterTest extends CommonTestData {
         String fileName = "samples/fileTree.find";
         FindReader reader = new FindReader(getReader(fileName));
         FileTree tree = reader.read();
-        FindWriter writer = new FindWriter(tree);
+        FindWriter writer = new FindWriter(tree, printStream);
         writer.write();
 
         verifyOutput(fileName);

@@ -14,7 +14,7 @@ public class Acm1Reader
     private Map<Integer, SystemNode> nodeMap = new LinkedHashMap<Integer, SystemNode>();
 
 
-    protected Acm1Reader(Reader reader) {
+    public Acm1Reader(Reader reader) {
         super(reader);
     }
 
