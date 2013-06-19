@@ -1,6 +1,5 @@
 package sergpank.a.reader;
 
-import java.io.File;
 import java.io.Reader;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -13,13 +12,12 @@ public class Acm2Reader extends AbstractReader {
 
     Map<Integer, SystemNode> nodeMap = new LinkedHashMap<Integer, SystemNode>();
 
-    protected Acm2Reader(Reader reader) {
+    public Acm2Reader(Reader reader) {
         super(reader);
     }
 
-
     @Override
-    public sergpank.a.filesystem.FileTree read() {
+    public FileTree read() {
         FileTree tree = new FileTree();
 
         SystemNode rootNode = growTree(tree);
@@ -28,13 +26,11 @@ public class Acm2Reader extends AbstractReader {
         return tree;
     }
 
-
     private SystemNode growTree(FileTree tree) {
         readNodes();
         SystemNode rootNode = connectNodes(tree);
         return rootNode;
     }
-
 
     private void readNodes() {
         for(int i = 1; i <= getNodesNumber(); i++){
@@ -42,7 +38,6 @@ public class Acm2Reader extends AbstractReader {
             nodeMap.put(node.getId(), node);
         }
     }
-
 
     private SystemNode connectNodes(FileTree tree) {
         SystemNode rootNode = null;
