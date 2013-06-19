@@ -2,6 +2,7 @@ package sergpank.a;
 
 import sergpank.a.filesystem.SystemNode;
 
+import java.util.Arrays;
 import java.util.Stack;
 
 public class Main {
@@ -20,6 +21,11 @@ public class Main {
         System.out.println(stack.pop());
         System.out.println(stack.pop());
         System.out.println(stack.isEmpty());
+
+        char[] data = new char[0];
+        Arrays.fill(data, ' ');
+        StringBuilder ab = new StringBuilder();
+        System.out.println(ab.append(data).append("kekeke").toString());
 
     }
 

@@ -2,25 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77c3831a-2ca6-4d9e-9b99-241733c8eff5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sergpank/a/reader/AbstractReader.java" afterPath="$PROJECT_DIR$/src/sergpank/a/reader/AbstractReader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sergpank/a/reader/Acm1Reader.java" afterPath="$PROJECT_DIR$/src/sergpank/a/reader/Acm1Reader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/sergpank/a/reader/Acm1ReaderTest.java" afterPath="$PROJECT_DIR$/test/sergpank/a/reader/Acm1ReaderTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sergpank/a/reader/Acm2Reader.java" afterPath="$PROJECT_DIR$/src/sergpank/a/reader/Acm2Reader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/sergpank/a/reader/Acm2ReaderTest.java" afterPath="$PROJECT_DIR$/test/sergpank/a/reader/Acm2ReaderTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sergpank/a/reader/Acm3Reader.java" afterPath="$PROJECT_DIR$/src/sergpank/a/reader/Acm3Reader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/sergpank/a/reader/Acm3ReaderTest.java" afterPath="$PROJECT_DIR$/test/sergpank/a/reader/Acm3ReaderTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sergpank/a/filesystem/FileTree.java" afterPath="$PROJECT_DIR$/src/sergpank/a/filesystem/FileTree.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sergpank/a/reader/FindReader.java" afterPath="$PROJECT_DIR$/src/sergpank/a/reader/FindReader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/sergpank/a/reader/FindReaderTest.java" afterPath="$PROJECT_DIR$/test/sergpank/a/reader/FindReaderTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sergpank/a/writer/FindWriter.java" afterPath="$PROJECT_DIR$/src/sergpank/a/writer/FindWriter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/sergpank/CommonTestData.java" afterPath="$PROJECT_DIR$/test/sergpank/CommonTestData.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/sergpank/a/writer/FindWriterTest.java" afterPath="$PROJECT_DIR$/test/sergpank/a/writer/FindWriterTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sergpank/a/reader/PythonReader.java" afterPath="$PROJECT_DIR$/src/sergpank/a/reader/PythonReader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/sergpank/a/reader/PythonReaderTest.java" afterPath="$PROJECT_DIR$/test/sergpank/a/reader/PythonReaderTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sergpank/a/reader/XmlReader.java" afterPath="$PROJECT_DIR$/src/sergpank/a/reader/XmlReader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/sergpank/a/reader/XmlReaderTest.java" afterPath="$PROJECT_DIR$/test/sergpank/a/reader/XmlReaderTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="E:\serg\PLAYGROUND\yandex\test\sergpank\a\reader\CommonTestData.java" afterPath="$PROJECT_DIR$/test/sergpank/CommonTestData.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sergpank/a/Main.java" afterPath="$PROJECT_DIR$/src/sergpank/a/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sergpank/a/writer/PythonWriter.java" afterPath="$PROJECT_DIR$/src/sergpank/a/writer/PythonWriter.java" />
     </list>
     <ignored path="yandex.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,11 +15,11 @@
     <file path="/DirectoryNode.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371373694621" ignored="false" />
     <file path="/Dummy.txt" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371657318569" ignored="false" />
     <file path="/FileTree.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371661071377" ignored="false" />
-    <file path="/fragment.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371659119821" ignored="false" />
+    <file path="/fragment.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371666019550" ignored="false" />
     <file path="/File Header.txt.ft" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371391607356" ignored="false" />
     <file path="/Reader.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371395665162" ignored="false" />
     <file path="/FindReader.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371658147784" ignored="false" />
-    <file path="/Main.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371586381107" ignored="false" />
+    <file path="/Main.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371665615738" ignored="false" />
     <file path="/SystemNode.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371492499691" ignored="false" />
     <file path="/AbstractReader.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371659215075" ignored="false" />
     <file path="/Overridden Method Body.txt.ft" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371397442715" ignored="false" />
@@ -72,7 +57,8 @@
     <file path="/LineByLineReader.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371658612377" ignored="false" />
     <file path="/CommonTestData.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371658389826" ignored="false" />
     <file path="/Acm3ReaderTest.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371658405512" ignored="false" />
-    <file path="/PythonWriter.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371662249279" ignored="false" />
+    <file path="/PythonWriter.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371665992322" ignored="false" />
+    <file path="/PythonWriterTest.java" changelist="77c3831a-2ca6-4d9e-9b99-241733c8eff5" time="1371666298100" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,46 +142,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Acm1Reader.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sergpank/a/reader/Acm1Reader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="54" selection-start="1443" selection-end="1443" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="FileTree.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sergpank/a/filesystem/FileTree.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="85" column="16" selection-start="2360" selection-end="2360" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Acm2ReaderTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/sergpank/a/reader/Acm2ReaderTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="40" selection-start="324" selection-end="324" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Acm2Reader.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sergpank/a/reader/Acm2Reader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="25" selection-start="1408" selection-end="1408" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Acm3ReaderTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/sergpank/a/reader/Acm3ReaderTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="38" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -231,8 +181,49 @@
       <file leaf-file-name="PythonWriter.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sergpank/a/writer/PythonWriter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="8" selection-start="303" selection-end="303" vertical-scroll-proportion="0.4375">
+            <state line="18" column="44" selection-start="408" selection-end="408" vertical-scroll-proportion="0.21875">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PythonWriterTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/sergpank/a/writer/PythonWriterTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="29" selection-start="543" selection-end="543" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FindWriterTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/sergpank/a/writer/FindWriterTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="41" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommonTestData.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/sergpank/CommonTestData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="0" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sergpank/a/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="32" selection-start="683" selection-end="683" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#399#408#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -267,10 +258,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/sergpank/a/reader/AbstractReader.java" />
-        <option value="$PROJECT_DIR$/test/sergpank/CommonTestData.java" />
-        <option value="$PROJECT_DIR$/src/sergpank/a/writer/FindWriter.java" />
-        <option value="$PROJECT_DIR$/test/sergpank/a/writer/FindWriterTest.java" />
         <option value="$PROJECT_DIR$/test/sergpank/a/reader/Acm2ReaderTest.java" />
         <option value="$PROJECT_DIR$/test/sergpank/a/reader/Acm3ReaderTest.java" />
         <option value="$PROJECT_DIR$/test/sergpank/a/reader/FindReaderTest.java" />
@@ -282,6 +269,10 @@
         <option value="$PROJECT_DIR$/src/sergpank/a/reader/Acm3Reader.java" />
         <option value="$PROJECT_DIR$/test/sergpank/a/reader/XmlReaderTest.java" />
         <option value="$PROJECT_DIR$/src/sergpank/a/reader/XmlReader.java" />
+        <option value="$PROJECT_DIR$/src/sergpank/a/Main.java" />
+        <option value="$PROJECT_DIR$/test/sergpank/a/writer/FindWriterTest.java" />
+        <option value="$PROJECT_DIR$/test/sergpank/CommonTestData.java" />
+        <option value="$PROJECT_DIR$/test/sergpank/a/writer/PythonWriterTest.java" />
         <option value="$PROJECT_DIR$/src/sergpank/a/writer/PythonWriter.java" />
       </list>
     </option>
@@ -632,6 +623,7 @@
       <recent name="sergpank.a.reader" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
+      <recent name="sergpank.CommonTestData" />
       <recent name="sergpank.a.reader.CommonTestData" />
       <recent name="" />
     </key>
@@ -646,7 +638,7 @@
       <recent name="sergpank.a" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in yandex">
+  <component name="RunManager" selected="JUnit.PythonWriterTest.testWrite">
     <configuration default="false" name="All in yandex" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="yandex" />
@@ -723,20 +715,15 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="FindWriterTest.testWrite" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="sergpank.a.writer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration default="false" name="FindWriterTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="yandex" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="sergpank.a.writer" />
       <option name="MAIN_CLASS_NAME" value="sergpank.a.writer.FindWriterTest" />
-      <option name="METHOD_NAME" value="testWrite" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -751,15 +738,15 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="FindWriterTest" type="JUnit" factoryName="JUnit" temporary="true">
+    <configuration default="false" name="PythonWriterTest.testWrite" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="yandex" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="sergpank.a.writer" />
-      <option name="MAIN_CLASS_NAME" value="sergpank.a.writer.FindWriterTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="sergpank.a.writer.PythonWriterTest" />
+      <option name="METHOD_NAME" value="testWrite" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -841,16 +828,16 @@
       <item index="0" class="java.lang.String" itemvalue="JUnit.All in yandex" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.XmlReaderTest.testRead" />
       <item index="2" class="java.lang.String" itemvalue="Application.Main" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.FindWriterTest.testWrite" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.FindWriterTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.FindWriterTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.PythonWriterTest.testWrite" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.All in yandex" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.XmlReaderTest.testRead" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.FindWriterTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.FindWriterTest.testWrite" />
-        <item index="4" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.PythonWriterTest.testWrite" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.All in yandex" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.XmlReaderTest.testRead" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.FindWriterTest" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -986,36 +973,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.6.0_26/src.zip!/java/lang/System.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="483" column="23" selection-start="19261" selection-end="19261" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.6.0_26/src.zip!/java/util/Properties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="6" selection-start="4154" selection-end="4154" vertical-scroll-proportion="-26.623009">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/sergpank/a/writer/FindWriterTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="16" selection-start="515" selection-end="515" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/sergpank/a/reader/FindReaderTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="47" selection-start="393" selection-end="393" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/sergpank/a/reader/PythonReaderTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="73" selection-start="533" selection-end="533" vertical-scroll-proportion="0.0">
@@ -1095,10 +1052,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sergpank/a/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="32" selection-start="683" selection-end="683" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#399#408#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/sergpank/a/writer/FindWriterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="41" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/sergpank/CommonTestData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/sergpank/a/writer/PythonWriterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="29" selection-start="543" selection-end="543" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sergpank/a/writer/PythonWriter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="8" selection-start="303" selection-end="303" vertical-scroll-proportion="0.4375">
-          <folding />
+        <state line="18" column="44" selection-start="408" selection-end="408" vertical-scroll-proportion="0.21875">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
