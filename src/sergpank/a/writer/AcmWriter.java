@@ -4,11 +4,16 @@ import sergpank.a.filesystem.FileTree;
 import sergpank.a.filesystem.SystemNode;
 
 import java.io.PrintStream;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.LinkedHashSet;
+import java.util.Set;
 
 public abstract class AcmWriter extends AbstractWriter {
-    protected List<SystemNode> nodes = new ArrayList<SystemNode>();
+    protected Set<SystemNode> nodes;
+
+    protected AcmWriter(FileTree tree, PrintStream printStream) {
+        super(tree, printStream);
+        nodes = new LinkedHashSet<SystemNode>();
+    }
 
     @Override
     public void write() {
@@ -18,15 +23,11 @@ public abstract class AcmWriter extends AbstractWriter {
         printIdentifiers();
     }
 
-    private void readNodes(SystemNode node) {
+    protected void readNodes(SystemNode node) {
         nodes.add(node);
         for (SystemNode sn : node.getChildren()) {
             readNodes(sn);
         }
-    }
-
-    protected AcmWriter(FileTree tree, PrintStream printStream) {
-        super(tree, printStream);
     }
 
 
