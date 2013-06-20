@@ -7,11 +7,11 @@ import java.io.PrintStream;
 
 public class WriterFactory {
 
-    public static AbstractWriter createWriter(String type, FileTree tree, PrintStream stream){
+    public static AbstractWriter createWriter(String type, FileTree tree, PrintStream stream) {
         FormatType writerType = FormatType.valueOf(type);
 
         AbstractWriter necessaryWriter = null;
-        switch (writerType){
+        switch (writerType) {
             case find:
                 necessaryWriter = new FindWriter(tree, stream);
                 break;

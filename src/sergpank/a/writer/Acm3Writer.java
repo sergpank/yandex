@@ -20,7 +20,7 @@ public class Acm3Writer extends AcmWriter {
         Set<SystemNode> properlySortedNodes = sortNodes();
         Iterator<SystemNode> iterator = properlySortedNodes.iterator();
         iterator.next();
-        while(iterator.hasNext()){
+        while (iterator.hasNext()) {
             SystemNode node = iterator.next();
             printStream.println(new StringBuilder().append(node.getParent().getId()).append(SEPARATOR).append(node.getId()));
         }
@@ -36,7 +36,7 @@ public class Acm3Writer extends AcmWriter {
                 return diff != 0 ? diff : node1.getId() - node2.getId();
             }
         });
-        for(SystemNode node : nodes){
+        for (SystemNode node : nodes) {
             properlySortedNodes.add(node);
         }
         return properlySortedNodes;

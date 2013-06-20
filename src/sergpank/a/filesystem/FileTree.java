@@ -1,6 +1,5 @@
 package sergpank.a.filesystem;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
@@ -43,13 +42,13 @@ public class FileTree {
 
     private SystemNode findParentNode(Set<SystemNode> currentLevelNodes, String[] parents) {
         SystemNode parentNode = null;
-        for(SystemNode node : currentLevelNodes){
-            if(node.getName().equals(parents[0])){
+        for (SystemNode node : currentLevelNodes) {
+            if (node.getName().equals(parents[0])) {
                 parentNode = node;
                 break;
             }
         }
-        if(parents.length > 1){
+        if (parents.length > 1) {
             int length = parents.length - 1;
             String[] restParents = new String[length];
             System.arraycopy(parents, 1, restParents, 0, length);
@@ -74,10 +73,10 @@ public class FileTree {
 
     private SystemNode findParentNode(List<SystemNode> nodeStack) {
         SystemNode parentNode = rootNode;
-        for(int i = 1; i < nodeStack.size(); i++){
+        for (int i = 1; i < nodeStack.size(); i++) {
             SystemNode necessaryNode = nodeStack.get(i);
-            for(SystemNode sn : parentNode.getChildren()){
-                if(sn.equals(necessaryNode)){
+            for (SystemNode sn : parentNode.getChildren()) {
+                if (sn.equals(necessaryNode)) {
                     parentNode = sn;
                 }
             }

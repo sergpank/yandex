@@ -1,8 +1,8 @@
 package sergpank.a.writer;
 
 import org.junit.Test;
-import sergpank.a.filesystem.FileTree;
 import sergpank.a.CommonTestData;
+import sergpank.a.filesystem.FileTree;
 import sergpank.a.reader.FindReader;
 
 public class FindWriterTest extends CommonTestData {

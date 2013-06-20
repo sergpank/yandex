@@ -1,15 +1,15 @@
 package sergpank.a.writer;
 
+import sergpank.a.filesystem.FileTree;
+import sergpank.a.filesystem.SystemNode;
+
 import java.io.PrintStream;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Set;
 import java.util.TreeSet;
 
-import sergpank.a.filesystem.FileTree;
-import sergpank.a.filesystem.SystemNode;
-
-public class XmlWriter extends AbstractWriter{
+public class XmlWriter extends AbstractWriter {
 
     public static final String FILE_OPEN = "<file name='";
     public static final String ID = "' id='";
@@ -38,17 +38,18 @@ public class XmlWriter extends AbstractWriter{
         sortNodes(tree.getRootNode());
         int level = 0;
         printTree(tree.getRootNode(), level);
+        printStream.close();
     }
 
 
     private void printTree(SystemNode node, int level) {
-        if(node.getChildren().size() > 0){
+        if (node.getChildren().size() > 0) {
             printDirectory(node, level);
-            for(SystemNode child : node.getChildren()){
+            for (SystemNode child : node.getChildren()) {
                 printTree(child, level + 1);
             }
             closeDirectory(level);
-        } else{
+        } else {
             printFolder(node, level);
         }
     }
@@ -57,7 +58,7 @@ public class XmlWriter extends AbstractWriter{
     private void printDirectory(SystemNode node, int level) {
         char[] spaces = createIndent(level);
         StringBuilder sb = new StringBuilder().append(createIndent(level)).append(DIR_OPEN).append(node.getName()).append(ID)
-                                              .append(node.getId()).append(DIR_END);
+                .append(node.getId()).append(DIR_END);
         printStream.println(sb.toString());
     }
 
@@ -69,7 +70,7 @@ public class XmlWriter extends AbstractWriter{
 
     private void printFolder(SystemNode node, int level) {
         StringBuilder sb = new StringBuilder().append(createIndent(level)).append(FILE_OPEN)
-                                              .append(node.getName()).append(ID).append(node.getId()).append(FILE_CLOSE);
+                .append(node.getName()).append(ID).append(node.getId()).append(FILE_CLOSE);
         printStream.println(sb.toString());
     }
 
@@ -83,7 +84,7 @@ public class XmlWriter extends AbstractWriter{
 
     private void sortNodes(SystemNode node) {
         sortedNodes.add(node);
-        for(SystemNode child : node.getChildren()){
+        for (SystemNode child : node.getChildren()) {
             sortNodes(child);
         }
     }

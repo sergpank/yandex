@@ -4,7 +4,6 @@ import sergpank.a.filesystem.FileTree;
 import sergpank.a.filesystem.SystemNode;
 
 import java.io.PrintStream;
-import java.util.List;
 import java.util.Set;
 import java.util.Stack;
 
@@ -19,6 +18,7 @@ public class FindWriter extends AbstractWriter {
     public void write() {
         printStream.println(tree.getNodeCount());
         dig(tree.getRootNode());
+        printStream.close();
     }
 
     private void dig(SystemNode node) {

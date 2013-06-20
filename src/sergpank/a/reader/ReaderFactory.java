@@ -6,12 +6,12 @@ import java.io.Reader;
 
 public class ReaderFactory {
 
-    public static AbstractReader createReader(String type, Reader reader){
+    public static AbstractReader createReader(String type, Reader reader) {
         FormatType readerType = FormatType.valueOf(type);
 
         AbstractReader necessaryReader;
 
-        switch(readerType){
+        switch (readerType) {
             case find:
                 necessaryReader = new FindReader(reader);
                 break;

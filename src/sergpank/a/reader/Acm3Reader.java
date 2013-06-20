@@ -5,8 +5,6 @@ import sergpank.a.filesystem.SystemNode;
 
 import java.io.IOException;
 import java.io.Reader;
-import java.util.LinkedHashMap;
-import java.util.Map;
 
 public class Acm3Reader
         extends AcmReader {

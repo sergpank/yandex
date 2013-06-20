@@ -3,11 +3,8 @@ package sergpank.a.reader;
 import sergpank.a.filesystem.FileTree;
 import sergpank.a.filesystem.SystemNode;
 
-import java.io.File;
 import java.io.IOException;
 import java.io.Reader;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Stack;
 
 public class PythonReader extends AbstractReader {
@@ -43,8 +40,8 @@ public class PythonReader extends AbstractReader {
 
             if (nodeLevel > level) {
                 nodeStack.push(previousNode);
-            } else if(nodeLevel < level){
-                for(int cnt = 0; cnt < level - nodeLevel; cnt++){
+            } else if (nodeLevel < level) {
+                for (int cnt = 0; cnt < level - nodeLevel; cnt++) {
                     nodeStack.pop();
                 }
             }

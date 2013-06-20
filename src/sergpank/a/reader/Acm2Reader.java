@@ -32,7 +32,7 @@ public class Acm2Reader
     }
 
     protected void readNodes() throws IOException {
-        for(int i = 1; i <= getNodesNumber(); i++){
+        for (int i = 1; i <= getNodesNumber(); i++) {
             SystemNode node = createNode(readLine());
             nodeMap.put(node.getId(), node);
         }

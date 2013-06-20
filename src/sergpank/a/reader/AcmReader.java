@@ -22,13 +22,15 @@ public class AcmReader extends AbstractReader {
     @Override
     protected String readLine() throws IOException {
         String line = null;
-        if(lineCounter == 0){
+        if (lineCounter == 0) {
             line = reader.readLine();
             linesNumber = Integer.parseInt(line) * 2 + 1;
             ++lineCounter;
-        } else if(lineCounter <= linesNumber){
+        } else if (lineCounter <= linesNumber) {
             line = reader.readLine();
             ++lineCounter;
+        } else{
+            reader.close();
         }
         return line;
     }
@@ -39,7 +41,7 @@ public class AcmReader extends AbstractReader {
     }
 
     protected void readNodes() throws IOException {
-        for(int i = 1; i < getNodesNumber(); i++){
+        for (int i = 1; i < getNodesNumber(); i++) {
             SystemNode node = createNode(readLine());
             nodeMap.put(node.getId(), node);
         }

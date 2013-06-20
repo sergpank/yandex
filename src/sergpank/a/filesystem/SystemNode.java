@@ -2,7 +2,6 @@ package sergpank.a.filesystem;
 
 import java.text.MessageFormat;
 import java.util.Comparator;
-import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -24,15 +23,15 @@ public class SystemNode {
         });
     }
 
-    public int getId(){
+    public int getId() {
         return id;
     }
 
-    public String getName(){
+    public String getName() {
         return name;
     }
 
-    public SystemNode getParent(){
+    public SystemNode getParent() {
         return parent;
     }
 
@@ -44,7 +43,7 @@ public class SystemNode {
         return childSet;
     }
 
-    public void addChild(SystemNode child){
+    public void addChild(SystemNode child) {
         childSet.add(child);
         child.setParent(this);
     }
@@ -81,7 +80,7 @@ public class SystemNode {
     private StringBuffer toString(SystemNode highNode) {
         StringBuffer line = new StringBuffer(MessageFormat.format("{0} {1}", highNode.getId(), highNode.getName()));
         SystemNode parent = highNode.getParent();
-        while(parent != null){
+        while (parent != null) {
             line.append(" <- ");
             line.append(parent.getName());
             parent = parent.getParent();

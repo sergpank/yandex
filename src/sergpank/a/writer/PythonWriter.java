@@ -6,7 +6,7 @@ import sergpank.a.filesystem.SystemNode;
 import java.io.PrintStream;
 import java.util.Arrays;
 
-public class PythonWriter extends AbstractWriter{
+public class PythonWriter extends AbstractWriter {
 
     protected PythonWriter(FileTree tree, PrintStream stream) {
         super(tree, stream);
@@ -16,13 +16,13 @@ public class PythonWriter extends AbstractWriter{
     public void write() {
         int level = 0;
         printStream.println(tree.getNodeCount());
-
         printNode(tree.getRootNode(), level);
+        printStream.close();
     }
 
     private void printNode(SystemNode node, int level) {
         printStream.println(nodeToString(node, level));
-        for(SystemNode child : node.getChildren()){
+        for (SystemNode child : node.getChildren()) {
             printNode(child, level + 1);
         }
     }

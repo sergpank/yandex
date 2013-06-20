@@ -1,35 +1,27 @@
 package sergpank.a;
 
-import sergpank.a.filesystem.SystemNode;
+import sergpank.a.filesystem.FileTree;
+import sergpank.a.reader.AbstractReader;
+import sergpank.a.reader.ReaderFactory;
+import sergpank.a.writer.AbstractWriter;
+import sergpank.a.writer.WriterFactory;
 
-import java.util.Arrays;
-import java.util.Stack;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class Main {
 
-    public static void main(String[] args) {
-//        AbstractReader reader = new FindReader(new File("samples/fileTree.find"));
-//        FileTree fileTree = reader.read();
-//        printFileTree(fileTree.getRootNode());
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        Stack<Integer> stack = new Stack<Integer>();
-        stack.push(1);
-        stack.push(2);
-        stack.push(3);
+        String inputFormat = br.readLine();
+        String outputFormat = br.readLine();
 
-        System.out.println(stack.pop());
-        System.out.println(stack.pop());
-        System.out.println(stack.pop());
-        System.out.println(stack.isEmpty());
-
-        char[] data = new char[0];
-        Arrays.fill(data, ' ');
-        StringBuilder ab = new StringBuilder();
-        System.out.println(ab.append(data).append("kekeke").toString());
-
+        AbstractReader reader = ReaderFactory.createReader(inputFormat, br);
+        FileTree tree = reader.read();
+        AbstractWriter writer = WriterFactory.createWriter(outputFormat, tree, System.out);
+        writer.write();
     }
 
-    private static void printFileTree(SystemNode startNode) {
-        System.out.println(startNode.toString());
-    }
 }

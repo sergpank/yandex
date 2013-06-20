@@ -3,7 +3,6 @@ package sergpank.a.reader;
 import sergpank.a.filesystem.FileTree;
 import sergpank.a.filesystem.SystemNode;
 
-import java.io.File;
 import java.io.IOException;
 import java.io.Reader;
 import java.util.Arrays;
@@ -11,7 +10,6 @@ import java.util.Arrays;
 public class FindReader extends AbstractReader {
 
     private String[] parents;
-    private int lineCounter;
 
     public FindReader(Reader reader) {
         super(reader);

@@ -5,7 +5,7 @@ import sergpank.a.filesystem.SystemNode;
 
 import java.io.PrintStream;
 
-public class Acm2Writer extends AcmWriter{
+public class Acm2Writer extends AcmWriter {
 
     protected Acm2Writer(FileTree tree, PrintStream printStream) {
         super(tree, printStream);
@@ -13,10 +13,10 @@ public class Acm2Writer extends AcmWriter{
 
     @Override
     protected void printIdentifiers() {
-        for(SystemNode node : nodes){
-            if(node.getParent() == null){
+        for (SystemNode node : nodes) {
+            if (node.getParent() == null) {
                 printStream.println(-1);
-            } else{
+            } else {
                 printStream.println(node.getParent().getId());
             }
         }

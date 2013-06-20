@@ -20,13 +20,15 @@ public abstract class AbstractReader {
 
     protected String readLine() throws IOException {
         String line = null;
-        if(lineCounter == 0){
+        if (lineCounter == 0) {
             line = reader.readLine();
             nodeNumber = Integer.parseInt(line);
             ++lineCounter;
-        } else if(lineCounter <= nodeNumber){
+        } else if (lineCounter <= nodeNumber) {
             line = reader.readLine();
             ++lineCounter;
+        } else{
+            reader.close();
         }
         return line;
     }

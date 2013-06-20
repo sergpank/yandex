@@ -21,6 +21,7 @@ public abstract class AcmWriter extends AbstractWriter {
         readNodes(tree.getRootNode());
         printNodes();
         printIdentifiers();
+        printStream.close();
     }
 
     protected void readNodes(SystemNode node) {
