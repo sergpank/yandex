@@ -6,36 +6,39 @@ import sergpank.a.filesystem.SystemNode;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.Reader;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public abstract class AbstractReader {
 
-    protected Logger logger = Logger.getLogger(this.getClass().getName());
-    int nodeNumber = -1;
-    private BufferedReader reader;
+    private int nodeNumber = -1;
+    protected BufferedReader reader;
+
+    private int lineCounter;
 
     protected AbstractReader(Reader reader) {
         this.reader = new BufferedReader(reader);
     }
 
-    protected String readLine() {
+    protected String readLine() throws IOException {
         String line = null;
-        try {
+        if(lineCounter == 0){
             line = reader.readLine();
-        } catch (IOException e) {
-            logger.log(Level.SEVERE, "Read error");
+            nodeNumber = Integer.parseInt(line);
+            ++lineCounter;
+        } else if(lineCounter <= nodeNumber){
+            line = reader.readLine();
+            ++lineCounter;
         }
         return line;
     }
 
-    public abstract FileTree read();
+    public abstract FileTree read() throws IOException;
 
     protected int getNodesNumber() {
-        if (nodeNumber == -1) {
-            nodeNumber = Integer.parseInt(readLine());
-        }
         return nodeNumber;
+    }
+
+    public void setNodeNumber(String line) {
+        this.nodeNumber = Integer.parseInt(line);
     }
 
     protected SystemNode createNode(String nodeString) {

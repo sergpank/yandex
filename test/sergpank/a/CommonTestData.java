@@ -1,7 +1,6 @@
-package sergpank;
+package sergpank.a;
 
 import org.junit.Assert;
-import org.junit.Before;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;
@@ -17,7 +16,7 @@ import java.util.logging.Logger;
 public class CommonTestData {
 
     ByteArrayOutputStream byteArrayStream = new ByteArrayOutputStream();
-    protected final PrintStream printStream = new PrintStream(byteArrayStream);
+    protected PrintStream printStream = new PrintStream(byteArrayStream);
 
     protected Logger logger = Logger.getLogger(this.getClass().getName());
 
@@ -29,6 +28,11 @@ public class CommonTestData {
             logger.log(Level.SEVERE, "Unable to open file " + fileName);
         }
         return reader;
+    }
+
+    protected void refreshStreams(){
+        byteArrayStream = new ByteArrayOutputStream();
+        printStream = new PrintStream(byteArrayStream);
     }
 
     protected String expected =
@@ -47,13 +51,23 @@ public class CommonTestData {
             "12 random1000 <- ru <- site <- .\n";
 
     protected void verifyOutput(String fileName) throws IOException {
+        verifyOutput("", fileName);
+    }
+
+    protected void verifyOutput(String message, String fileName) throws IOException {
+        String fileString = fileToString(fileName);
+        Assert.assertEquals(message, fileString, byteArrayStream.toString());
+        byteArrayStream = new ByteArrayOutputStream();
+    }
+
+    protected String fileToString(String fileName) throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader(fileName));
-        StringBuilder fileData = new StringBuilder();
         String line;
-        while ( (line = reader.readLine()) != null ){
-            fileData.append(line);
-            fileData.append(System.getProperty("line.separator"));
+        StringBuilder sb = new StringBuilder();
+        while( (line = reader.readLine()) != null ){
+            sb.append(line);
+            sb.append(System.getProperty("line.separator"));
         }
-        Assert.assertEquals(fileData.toString(), byteArrayStream.toString());
+        return sb.toString();
     }
 }

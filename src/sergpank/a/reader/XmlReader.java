@@ -4,6 +4,7 @@ import sergpank.a.filesystem.FileTree;
 import sergpank.a.filesystem.SystemNode;
 
 import java.io.File;
+import java.io.IOException;
 import java.io.Reader;
 import java.util.HashMap;
 import java.util.Map;
@@ -14,13 +15,23 @@ public class XmlReader extends AbstractReader{
     private static final String NAME = "name";
     private static final String ID = "id";
     private Stack<SystemNode> nodeStack = new Stack<SystemNode>();
+    private boolean isFirstTime = true;
 
     public XmlReader(Reader reader) {
         super(reader);
     }
 
     @Override
-    public FileTree read() {
+    protected String readLine() throws IOException {
+        String line = null;
+        if(nodeStack.isEmpty() || isFirstTime){
+            line = reader.readLine();
+        }
+        return line;
+    }
+
+    @Override
+    public FileTree read() throws IOException {
         FileTree tree = new FileTree();
         SystemNode rootNode = parseDir(readLine());
         nodeStack.push(rootNode);
@@ -29,7 +40,7 @@ public class XmlReader extends AbstractReader{
         return tree;
     }
 
-    private void growTree(FileTree tree) {
+    private void growTree(FileTree tree) throws IOException {
         String line;
         while ( (line = readLine()) != null ){
             if(isFile(line)){

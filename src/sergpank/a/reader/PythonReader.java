@@ -4,45 +4,49 @@ import sergpank.a.filesystem.FileTree;
 import sergpank.a.filesystem.SystemNode;
 
 import java.io.File;
+import java.io.IOException;
 import java.io.Reader;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Stack;
 
 public class PythonReader extends AbstractReader {
 
     int level = 1;
-    List<SystemNode> nodeStack = new ArrayList<SystemNode>();
+    private Stack<SystemNode> nodeStack = new Stack<SystemNode>();
 
     public PythonReader(Reader reader) {
         super(reader);
     }
 
     @Override
-    public FileTree read() {
+    public FileTree read() throws IOException {
 
         FileTree tree = new FileTree();
 
-        int nodesNr = getNodesNumber();
+        setNodeNumber(readLine());
         final SystemNode rootNode = createNode(readLine());
         tree.setRootNode(rootNode);
         nodeStack.add(rootNode);
 
-        growTree(tree, nodesNr);
+        growTree(tree);
 
         return tree;
     }
 
-    private void growTree(FileTree tree, int nodesNr) {
+    private void growTree(FileTree tree) throws IOException {
         SystemNode previousNode = null;
-        for (int i = 2; i <= nodesNr; i++) {
+        for (int i = 2; i <= getNodesNumber(); i++) {
             String nodeLine = readLine();
             int nodeLevel = getNodeLevel(nodeLine);
             SystemNode node = parseNode(nodeLine);
 
             if (nodeLevel > level) {
-                push(previousNode);
+                nodeStack.push(previousNode);
             } else if(nodeLevel < level){
-                pop(level - nodeLevel);
+                for(int cnt = 0; cnt < level - nodeLevel; cnt++){
+                    nodeStack.pop();
+                }
             }
             tree.addChild(node, nodeStack);
             previousNode = node;
@@ -62,13 +66,5 @@ public class PythonReader extends AbstractReader {
             ++cnt;
         }
         return cnt / 4;
-    }
-
-    private void push(SystemNode node) {
-        nodeStack.add(node);
-    }
-
-    private void pop(int levelsNr) {
-        nodeStack = nodeStack.subList(0, nodeStack.size() - levelsNr);
     }
 }

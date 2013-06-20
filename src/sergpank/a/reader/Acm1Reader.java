@@ -3,29 +3,29 @@ package sergpank.a.reader;
 import sergpank.a.filesystem.FileTree;
 import sergpank.a.filesystem.SystemNode;
 
-import java.io.File;
+import java.io.IOException;
 import java.io.Reader;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class Acm1Reader
-        extends AbstractReader {
+        extends AcmReader {
 
-    private Map<Integer, SystemNode> nodeMap = new LinkedHashMap<Integer, SystemNode>();
-
+    private int lineCounter = 0;
 
     public Acm1Reader(Reader reader) {
         super(reader);
     }
 
-
     @Override
-    public FileTree read() {
+    public FileTree read() throws IOException {
 
         FileTree tree = new FileTree();
-        getNodesNumber();
+        setNodeNumber(readLine());
+
         SystemNode rootNode = createNode(readLine());
         tree.setRootNode(rootNode);
+
         nodeMap.put(rootNode.getId(), rootNode);
 
         growTree(tree);
@@ -34,21 +34,13 @@ public class Acm1Reader
     }
 
 
-    private void growTree(FileTree tree) {
-        fillNodeMap();
+    private void growTree(FileTree tree) throws IOException {
+        readNodes();
         connectNodes(tree);
     }
 
 
-    private void fillNodeMap() {
-        for (int i = 1; i < getNodesNumber(); i++) {
-            SystemNode node = createNode(readLine());
-            nodeMap.put(node.getId(), node);
-        }
-    }
-
-
-    private void connectNodes(FileTree tree) {
+    private void connectNodes(FileTree tree) throws IOException {
         for (int key : nodeMap.keySet()) {
             String[] split = readLine().split(" ");
             SystemNode currentParent = nodeMap.get(key);

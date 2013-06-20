@@ -3,7 +3,7 @@ package sergpank.a.reader;
 
 import org.junit.Assert;
 import org.junit.Test;
-import sergpank.CommonTestData;
+import sergpank.a.CommonTestData;
 import sergpank.a.filesystem.FileTree;
 
 public class FindReaderTest extends CommonTestData {

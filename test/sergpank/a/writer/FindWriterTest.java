@@ -1,13 +1,9 @@
 package sergpank.a.writer;
 
-import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 import sergpank.a.filesystem.FileTree;
-import sergpank.CommonTestData;
+import sergpank.a.CommonTestData;
 import sergpank.a.reader.FindReader;
-
-import java.io.*;
 
 public class FindWriterTest extends CommonTestData {
 

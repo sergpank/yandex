@@ -4,27 +4,29 @@ import sergpank.a.filesystem.FileTree;
 import sergpank.a.filesystem.SystemNode;
 
 import java.io.File;
+import java.io.IOException;
 import java.io.Reader;
 import java.util.Arrays;
 
 public class FindReader extends AbstractReader {
 
     private String[] parents;
+    private int lineCounter;
 
     public FindReader(Reader reader) {
         super(reader);
     }
 
     @Override
-    public FileTree read() {
+    public FileTree read() throws IOException {
 
         FileTree tree = new FileTree();
 
-        int nodesNr = getNodesNumber();
+        setNodeNumber(readLine());
         SystemNode rootNode = parseNode(readLine());
         tree.setRootNode(rootNode);
 
-        for (int lineNr = 2; lineNr <= nodesNr; lineNr++) {
+        for (int lineNr = 2; lineNr <= getNodesNumber(); lineNr++) {
             SystemNode node = parseNode(readLine());
             tree.addChild(node, parents);
         }

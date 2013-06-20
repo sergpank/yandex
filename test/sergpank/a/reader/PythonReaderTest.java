@@ -2,7 +2,7 @@ package sergpank.a.reader;
 
 import junit.framework.Assert;
 import org.junit.Test;
-import sergpank.CommonTestData;
+import sergpank.a.CommonTestData;
 import sergpank.a.filesystem.FileTree;
 
 public class PythonReaderTest extends CommonTestData {
