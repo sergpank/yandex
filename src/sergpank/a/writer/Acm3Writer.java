@@ -6,6 +6,7 @@ import sergpank.a.filesystem.SystemNode;
 import java.io.PrintStream;
 import java.util.Comparator;
 import java.util.Iterator;
+import java.util.Set;
 import java.util.TreeSet;
 
 public class Acm3Writer extends AcmWriter {
@@ -16,7 +17,7 @@ public class Acm3Writer extends AcmWriter {
 
     @Override
     protected void printIdentifiers() {
-        TreeSet<SystemNode> properlySortedNodes = sortNodes();
+        Set<SystemNode> properlySortedNodes = sortNodes();
         Iterator<SystemNode> iterator = properlySortedNodes.iterator();
         iterator.next();
         while(iterator.hasNext()){
@@ -25,8 +26,8 @@ public class Acm3Writer extends AcmWriter {
         }
     }
 
-    private TreeSet<SystemNode> sortNodes() {
-        TreeSet<SystemNode> properlySortedNodes = new TreeSet<SystemNode>(new Comparator<SystemNode>() {
+    private Set<SystemNode> sortNodes() {
+        Set<SystemNode> properlySortedNodes = new TreeSet<SystemNode>(new Comparator<SystemNode>() {
             @Override
             public int compare(SystemNode node1, SystemNode node2) {
                 int parent1id = node1.getParent() == null ? 0 : node1.getParent().getId();

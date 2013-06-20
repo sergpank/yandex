@@ -15,7 +15,7 @@ public class XmlReader extends AbstractReader{
     private static final String ID = "id";
     private Stack<SystemNode> nodeStack = new Stack<SystemNode>();
 
-    protected XmlReader(Reader reader) {
+    public XmlReader(Reader reader) {
         super(reader);
     }
 
