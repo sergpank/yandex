@@ -4,26 +4,41 @@ import sergpank.a.filesystem.FileTree;
 import sergpank.a.filesystem.SystemNode;
 
 import java.io.PrintStream;
+import java.util.Comparator;
 import java.util.Set;
 import java.util.Stack;
+import java.util.TreeSet;
 
 public class FindWriter extends AbstractWriter {
 
+    Set<SystemNode> nodes;
 
-    protected FindWriter(FileTree tree, PrintStream stream) {
+    public FindWriter(FileTree tree, PrintStream stream) {
         super(tree, stream);
+        nodes = new TreeSet<SystemNode>(new Comparator<SystemNode>() {
+            @Override
+            public int compare(SystemNode node1, SystemNode node2) {
+                return node1.getId() - node2.getId();
+            }
+        });
     }
 
     @Override
     public void write() {
         printStream.println(tree.getNodeCount());
         dig(tree.getRootNode());
-        printStream.close();
+        printNodes();
+    }
+
+    private void printNodes() {
+        for(SystemNode node : nodes){
+            printNode(node, new Stack<String>(), node.getId());
+        }
     }
 
     private void dig(SystemNode node) {
         Set<SystemNode> children = node.getChildren();
-        printNode(node, new Stack<String>(), node.getId());
+        nodes.add(node);
         for (SystemNode child : children) {
             dig(child);
         }

@@ -1,4 +1,4 @@
-package sergpank.a;
+package sergpank;
 
 public enum FormatType {
     find,

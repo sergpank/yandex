@@ -19,7 +19,7 @@ public class XmlWriter extends AbstractWriter {
     public static final String DIR_CLOSE = "</dir>";
     Set<SystemNode> sortedNodes;
 
-    protected XmlWriter(FileTree tree, PrintStream printStream) {
+    public XmlWriter(FileTree tree, PrintStream printStream) {
         super(tree, printStream);
         sortedNodes = new TreeSet<SystemNode>(new Comparator<SystemNode>() {
             @Override

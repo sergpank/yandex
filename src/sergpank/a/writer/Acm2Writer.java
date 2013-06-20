@@ -7,7 +7,7 @@ import java.io.PrintStream;
 
 public class Acm2Writer extends AcmWriter {
 
-    protected Acm2Writer(FileTree tree, PrintStream printStream) {
+    public Acm2Writer(FileTree tree, PrintStream printStream) {
         super(tree, printStream);
     }
 

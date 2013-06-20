@@ -11,7 +11,7 @@ import java.util.TreeSet;
 
 public class Acm3Writer extends AcmWriter {
 
-    protected Acm3Writer(FileTree tree, PrintStream stream) {
+    public Acm3Writer(FileTree tree, PrintStream stream) {
         super(tree, stream);
     }
 

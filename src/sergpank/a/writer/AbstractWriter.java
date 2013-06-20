@@ -10,7 +10,7 @@ public abstract class AbstractWriter {
     protected FileTree tree;
     protected PrintStream printStream;
 
-    protected AbstractWriter(FileTree tree, PrintStream printStream) {
+    public AbstractWriter(FileTree tree, PrintStream printStream) {
         this.tree = tree;
         this.printStream = printStream;
     }

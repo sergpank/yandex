@@ -1,6 +1,6 @@
 package sergpank.a.writer;
 
-import sergpank.a.FormatType;
+import sergpank.FormatType;
 import sergpank.a.filesystem.FileTree;
 
 import java.io.PrintStream;

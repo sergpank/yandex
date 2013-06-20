@@ -1,6 +1,6 @@
 package sergpank.a.reader;
 
-import sergpank.a.FormatType;
+import sergpank.FormatType;
 
 import java.io.Reader;
 
