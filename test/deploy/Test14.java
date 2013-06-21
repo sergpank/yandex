@@ -2,8 +2,6 @@ package deploy;
 
 import org.junit.Test;
 import sergpank.a.CommonTestData;
-import sergpank.a.reader.FindReader;
-import sergpank.a.writer.Acm1Writer;
 
 public class Test14 extends CommonTestData{
 

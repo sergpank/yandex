@@ -1,5 +1,3 @@
-package deploy;
-
 import java.io.*;
 import java.text.MessageFormat;
 import java.util.*;
@@ -689,7 +687,12 @@ abstract class AcmWriter extends AbstractWriter {
 
     protected AcmWriter(FileTree tree, PrintStream printStream) {
         super(tree, printStream);
-        nodes = new LinkedHashSet<SystemNode>();
+        nodes = new TreeSet<SystemNode>(new Comparator<SystemNode>() {
+            @Override
+            public int compare(SystemNode node1, SystemNode node2) {
+                return node1.getId() - node2.getId();
+            }
+        });
     }
 
     @Override
@@ -723,6 +726,12 @@ class Acm1Writer extends AcmWriter {
 
     public Acm1Writer(FileTree tree, PrintStream stream) {
         super(tree, stream);
+        nodes = new TreeSet<SystemNode>(new Comparator<SystemNode>() {
+            @Override
+            public int compare(SystemNode node1, SystemNode node2) {
+                return node1.getId() - node2.getId();
+            }
+        });
     }
 
     @Override
